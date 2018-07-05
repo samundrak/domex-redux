@@ -1,0 +1,15 @@
+{
+  "name": "domex-redux",
+  "version": "1.0.0",
+  "description": "Abstraction over redux's actions and reducers using domex.",
+  "main": "src/DomexRedux.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redux": "^4.0.0"
+  }
+}
