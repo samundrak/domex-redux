@@ -1,16 +1,16 @@
 import { createStore, combineReducers } from 'redux';
 
-class DoxpressRedux {
-  constructor(doxpress) {
-    this.doxpress = doxpress;
+class DomexRedux {
+  constructor(domex) {
+    this.domex = domex;
     this.store = null;
     this.state = {};
     this._queue = new Map();
-    this.doxpress.on(
+    this.domex.on(
       'handler:message',
       this.handleRouterHandlerMessage.bind(this)
     );
-    this.doxpress.state = {};
+    this.domex.state = {};
   }
   setState(state) {
     this.state = state;
@@ -36,7 +36,7 @@ class DoxpressRedux {
       }),
       this.devtool()
     );
-    Object.defineProperty(this.doxpress, 'getState', {
+    Object.defineProperty(this.domex, 'getState', {
       configurable: false,
       value: () => {
         return this.store.getState();
@@ -64,4 +64,4 @@ class DoxpressRedux {
   }
 }
 
-export default DoxpressRedux;
+export default DomexRedux;
