@@ -93,3 +93,7 @@ Now we can trigger routes.
   };
 }
 ```
+
+##### Redux devtool
+
+![redux devtool](redux-ss.png)
